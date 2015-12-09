@@ -1,0 +1,32 @@
+<!-- START Sidebar (left)-->
+<div class="aside-inner">
+  <nav class="sidebar">
+    <!-- START sidebar nav-->
+    <ul class="nav">
+
+      <!-- Iterates over all sidebar items-->
+      <li class="<%= 'active' if controller?('welcome') %>">
+        <a href="#dashboard_sat" title="Dashboard Sat" data-toggle="collapse">
+          <em class="icon-speedometer"></em>
+          <span data-localize="sidebar.nav.DASHBOARD_SAT"><%= t('Sat') %></span>
+        </a>
+        <ul id="dashboard_sat" class="nav sidebar-subnav collapse">
+          <li class="sidebar-subnav-header"><%= t('Sat') %></li>
+        </ul>
+      </li>
+      <!-- Iterates over all sidebar items-->
+      <li class="<%= 'active' if controller?('welcome') %>">
+        <a href="#dashboard_sim" title="Dashboard Sim" data-toggle="collapse">
+          <em class="icon-speedometer"></em>
+          <span data-localize="sidebar.nav.DASHBOARD_SIM"><%= t('Sim') %></span>
+        </a>
+        <ul id="dashboard_sim" class="nav sidebar-subnav collapse">
+          <li class="sidebar-subnav-header"><%= t('Sim') %></li>
+
+        </ul>
+      </li>
+    </ul>
+    <!-- END sidebar nav-->
+  </nav>
+</div>
+<!-- END Sidebar (left)-->

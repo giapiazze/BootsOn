@@ -1,0 +1,35 @@
+<!-- START Top Navbar-->
+<nav role="navigation" class="navbar topnavbar">
+  <!-- START navbar header-->
+  <div class="navbar-header">
+    <a href="#/" class="navbar-brand">
+      <div class="brand-logo">
+        <img src="<%= image_path('exalogo.png') %>" alt="App Logo" class="img-responsive"/>
+      </div>
+      <div class="brand-logo-collapsed">
+        <img src="<%= image_path('exalogo-single.png') %>" alt="App Logo" class="img-responsive"/>
+      </div>
+    </a>
+  </div>
+  <!-- END navbar header-->
+  <!-- START Nav wrapper-->
+  <div class="nav-wrapper">
+    <!-- START Left navbar-->
+
+    </ul>
+    <!-- END Left navbar-->
+    <!-- START Right Navbar-->
+    <ul class="nav navbar-nav navbar-right">
+
+      <li>
+        <%= link_to user_omniauth_authorize_path(:doorkeeper) do %>
+            <em class="icon-login"></em>
+        <% end %>
+      </li>
+      <!-- END Contacts menu-->
+    </ul>
+    <!-- END Right Navbar-->
+  </div>
+  <!-- END Nav wrapper-->
+</nav>
+<!-- END Top Navbar-->

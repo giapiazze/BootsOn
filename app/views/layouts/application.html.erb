@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="<%= t('AppDescription') %>">
+  <meta name="keywords" content="<%= t('AppKeyWords') %>">
+  <title><%= t('AppTitle') %></title>
+  <!-- Favicon-->
+  <%= favicon_link_tag 'favicon.ico' %>
+  <!-- =============== VENDOR STYLES ===============-->
+  <!-- =============== VIEW VENDOR STYLES ===============-->
+  <%= stylesheet_link_tag params[:controller] %>
+  <!-- =============== APPLICATION STYLES ===============-->
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true, id: "maincss" %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<!-- =============== VENDOR SCRIPTS ===============-->
+<!-- =============== VIEW VENDOR SCRIPTS ===============-->
+<%= javascript_include_tag params[:controller], 'data-turbolinks-track' => true %>
+<!-- =============== APPLICATION SCRIPTS ===============-->
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
+</html>
